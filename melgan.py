@@ -150,7 +150,9 @@ if __name__=='__main__':
     pred=gan.discr(pred)
     gan.compile()
 
-    history=gan.fit(mels,audio,batch_size=10,checkpoints=5)
+    gan.fit(mels,audio,batch_size=10,checkpoints=5)
+
+    # Successiva fase di evaluation e inferenza. Il codice si ferma qui per il momento
     
 
 
@@ -158,3 +160,4 @@ if __name__=='__main__':
     
 
     
+
