@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
    
 
-# depracated. E' un refuso. Ignorare
+# deprecated. E' un refuso. Ignorare
 def calculate_sr(duration:float,hop_lenght:float,samples_desired:int,n_fft:int):
     return(((samples_desired-1)*hop_lenght)+n_fft)/duration
     
@@ -48,5 +48,6 @@ if __name__=='__main__':
     duration=5
     samples=65536
     print(calculate_sr(frames=frames,duration=duration,hop_lenght=hop_lenght,n_ftt=n_ftt))
+
 
 
